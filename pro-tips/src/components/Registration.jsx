@@ -43,18 +43,25 @@ const validate = (data) => {
 
     if (data.firstName.trim() === "") {
     error.firstName = "Please enter your first name";
+    toast("Enter the Frst Name");
+
     }
     if (data.lastName.trim() === "") {
     error.lastName = "Please enter your last name";
+    toast("Enter the Last Name");
+
     }
     if (data.email.trim() === "") {
     error.email = "Please enter your email";
+    toast("Enter a Valid Email Id");
     }
 
     if (data.phone.trim() === "") {
     error.phone = "Please enter your phone number";
+    toast("Enter Mobile Number");
     } else if (data.phone.trim().length !== 10) {
     error.phone = "Please enter a 10-digit phone number";
+    toast("Enter a Valid Mobile Number")
     }
 
     console.log("error:", error);
@@ -63,7 +70,7 @@ const validate = (data) => {
 };
 
 return (
-    <div className='form-container'>
+    <div style={{marginTop:"100px"}} className='form-container'>
     <fieldset id='legend'>
         <legend>Fill this form</legend>
         <form onSubmit={formSubmitHandler}>
@@ -91,7 +98,7 @@ return (
         <input type="number" name='phone' placeholder='phone number' onChange={handleInputChange} />
         {formErr.phone && <p className='err'>{formErr.phone}</p>}
 
-        <input type="submit" value={"Register"} />
+        <input style={{marginTop:"30px"}} type="submit" value={"Register"} />
         </form>
     </fieldset>
     
