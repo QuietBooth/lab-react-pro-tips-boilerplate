@@ -4,7 +4,7 @@ const PageNotFound = () => {
   return (
     <div>
       <center>
-        <img style={{width:"100%",height:"85vh"}} src="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?fit=845%2C503&ssl=1" alt="" />
+        <img style={{width:"100%",height:"85vh"}} src="https://www.freeparking.co.nz/learn/wp-content/uploads/2023/06/768x385-21.png" alt="" />
       </center>
     </div>
   )
