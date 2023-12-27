@@ -30,7 +30,7 @@ const formSubmitHandler = (e) => {
     let errKeyArray = Object.keys(errors);
 
     if (errKeyArray.length === 0) {
-        toast("Wow so easy!");
+        toast("Form Submitted Successfuly");
         setFormSubmit(true);
     } else {
         toast("Form not Submitted");
