@@ -16,6 +16,10 @@ const Navbar = () => {
           <h2>Contact</h2>        
         </Link>
 
+        <Link to={"/login"} >
+          <h2>Login</h2>
+        </Link>
+
         <Link to={"/Registration"} >
           <h2>Registration</h2>  
         </Link>

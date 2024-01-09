@@ -84,7 +84,8 @@ return (
 
         <label> First Name:</label>
         <input type="text" name='firstName' placeholder='First Name' onChange={handleInputChange} />
-        {formErr.firstName && <p className='err'>{formErr.firstName}</p>}
+        {formErr.firstName && <p className='err'>{formErr.firstName} </p>}
+        {formErr.firstName && <p> toast("Enter firstName") </p>}
 
         <label> Last Name:</label>
         <input type="text" name='lastName' placeholder='Last Name' onChange={handleInputChange} />
